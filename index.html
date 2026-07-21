@@ -9,6 +9,9 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff"></head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&display=swap" rel="stylesheet">
 <body>
 <div class="header">HOPPER OF ISLANDS</div>
 <table>
@@ -1173,25 +1176,31 @@ pre {
 	<style type="text/css">
 /* Style the header: fixed position (always stay at the top) */
 .header {
-    width: 96vw;
-    margin: 0;
-    padding: 20px 25px;
-    z-index: 1;
+    width: 100%;
+    padding: 18px 0;
     position: sticky;
     top: 0;
+    z-index: 100;
 
     background-color: #FFF6E6;
     background-image: radial-gradient(#1B2A4A 1px, transparent 1px);
     background-size: 16px 16px;
 
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 800;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1;
+
     color: #FF6B4E;
-    font-family: Comic Sans MS;
-    font-size: xx-large;
-    font-weight: bold;
+
+    -webkit-text-stroke: 1.2px #1B2A4A;
+    paint-order: stroke fill;
 
     text-shadow:
         2px 2px 0 #1B2A4A,
         4px 4px 0 #4FC3E8;
+
+    text-align: center;
 }
 
 pre {
